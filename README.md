@@ -5,8 +5,8 @@ file, without also having to use the `@test` annotation.
 
 ## Installation and usage
 
-Add `"unfunco/phpunit-alternative-test-prefix"` to your `require-dev` dependencies and run `composer install`, once
-added you can configure the listener within your test configuration.
+Add `unfunco/phpunit-alternative-test-prefix` to your `require-dev` dependencies and run `composer install`, once
+installed you can configure the alternative test prefix listener within your test configuration.
 
 ### Configuration
 
@@ -29,10 +29,6 @@ added you can configure the listener within your test configuration.
   </listeners>
 </phpunit>
 ```
-
-## References
-
-* [Requirements](https://github.com/sebastianbergmann/phpunit/pull/2047).
 
 ## License
 
