@@ -2,7 +2,7 @@
 
 Experimental plugin for PHPUnit that allows for prefixes other than `test` to be used without having
 to annotate each test method with a `@test` annotation. This was written in response to this
-[pull request](sebastianbergmann/phpunit#2047).
+[pull request](https://github.com/sebastianbergmann/phpunit/pull/2047).
 
 ## Example
 
