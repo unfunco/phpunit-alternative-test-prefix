@@ -12,6 +12,8 @@ class Test extends \PHPUnit_Framework_TestCase
 {
     /**
      * Tests the default test method prefix.
+     *
+     * @return void
      */
     public function testAddition()
     {
@@ -33,9 +35,21 @@ class Test extends \PHPUnit_Framework_TestCase
      *
      * @return void
      */
-    public function itDoesMultiplication()
+    public function itDoesDivision()
     {
         $this->assertEquals(25, 100 / 4);
+    }
+
+    /**
+     * Tests that annotations are still working.
+     *
+     * @test
+     *
+     * @return void
+     */
+    public function annotatedTest()
+    {
+        $this->assertEquals(5318008, 1329502 * 4);
     }
 
     /**
