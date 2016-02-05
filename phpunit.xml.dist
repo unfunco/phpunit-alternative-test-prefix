@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/5.2/phpunit.xsd"
+         backupGlobals="false"
+         bootstrap="vendor/autoload.php"
+         colors="true">
+    <testsuites>
+        <testsuite name="unfunco/phpunit-prefix">
+            <directory suffix="Test.php">test</directory>
+        </testsuite>
+    </testsuites>
+
+    <listeners>
+        <listener class="Unfunco\PHPUnit\Listener\PrefixListener">
+            <arguments>
+                <array>
+                    <element key="itCan">
+                        <string>itCan</string>
+                    </element>
+                    <element key="itDoes">
+                        <string>itDoes</string>
+                    </element>
+                </array>
+            </arguments>
+        </listener>
+    </listeners>
+</phpunit>
