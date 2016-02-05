@@ -1,14 +1,14 @@
 <?php
 
-namespace Unfunco\PHPUnit\Test;
+namespace Unfunco\PHPUnit\Test\Listener;
 
 /**
- * Basic test of the prefix listener.
+ * Basic test of the alternative test prefix listener.
  *
  * @package Unfunco\PHPUnit\Test
  * @author  Daniel Morris <daniel@honestempire.com>
  */
-class Test extends \PHPUnit_Framework_TestCase
+class AlternativeTestPrefixListenerTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * Tests the default test method prefix.

@@ -3,12 +3,12 @@
 namespace Unfunco\PHPUnit\Listener;
 
 /**
- * Prefix listener.
+ * Alternative test prefix listener.
  *
  * @package Unfunco\PHPUnit\Listener
  * @author  Daniel Morris <daniel@honestempire.com>
  */
-class PrefixListener implements \PHPUnit_Framework_TestListener
+class AlternativeTestPrefixListener implements \PHPUnit_Framework_TestListener
 {
     /**
      * Array of prefixes.
@@ -87,7 +87,7 @@ class PrefixListener implements \PHPUnit_Framework_TestListener
      * {@inheritDoc}
      *
      * @param \PHPUnit_Framework_Test                 $test The test.
-     * @param \PHPUnit_Framework_AssertionFailedError $e    The exception.
+     * @param \PHPUnit_Framework_AssertionFailedError $e    The error.
      * @param float                                   $time The time.
      */
     public function addFailure(\PHPUnit_Framework_Test $test, \PHPUnit_Framework_AssertionFailedError $e, $time)

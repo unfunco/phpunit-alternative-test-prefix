@@ -11,7 +11,7 @@
     </testsuites>
 
     <listeners>
-        <listener class="Unfunco\PHPUnit\Listener\PrefixListener">
+        <listener class="Unfunco\PHPUnit\Listener\AlternativeTestPrefixListener">
             <arguments>
                 <array>
                     <element key="itCan">
