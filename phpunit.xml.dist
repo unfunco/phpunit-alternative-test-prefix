@@ -13,14 +13,8 @@
     <listeners>
         <listener class="Unfunco\PHPUnit\Listener\AlternativeTestPrefixListener">
             <arguments>
-                <array>
-                    <element key="itCan">
-                        <string>itCan</string>
-                    </element>
-                    <element key="itDoes">
-                        <string>itDoes</string>
-                    </element>
-                </array>
+                <string>itCan</string>
+                <string>itDoes</string>
             </arguments>
         </listener>
     </listeners>

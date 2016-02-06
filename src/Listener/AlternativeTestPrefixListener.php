@@ -61,9 +61,9 @@ class AlternativeTestPrefixListener implements \PHPUnit_Framework_TestListener
     /**
      * Instantiates a new instance of the alternative test prefix listener.
      *
-     * @param array $prefixes Prefixes specified within the PHPUnit configuration file.
+     * @param array|string ...$prefixes Prefixes specified within the PHPUnit configuration file.
      */
-    public function __construct(array $prefixes)
+    public function __construct(...$prefixes)
     {
         $this->prefixes = $prefixes;
         $this->prefixRegExp = sprintf('/^%s/', implode('|', $prefixes));

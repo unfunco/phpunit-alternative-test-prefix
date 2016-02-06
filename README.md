@@ -18,14 +18,8 @@ installed you can configure the alternative test prefix listener within your tes
   <listeners>
     <listener class="Unfunco\PHPUnit\Listener\AlternativeTestPrefixListener">
       <arguments>
-        <array>
-          <element key="itCan">
-            <string>itCan</string>
-          </element>
-          <element key="itDoes">
-            <string>itDoes</string>
-          </element>
-        </array>
+        <string>itDoes</string>
+        <string>itCan</string>
       </arguments>
     </listener>
   </listeners>
