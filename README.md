@@ -1,5 +1,7 @@
 # PHPUnit alternative test prefix listener
 
+[![Build Status](https://travis-ci.org/unfunco/phpunit-alternative-test-prefix.svg?branch=master)](https://travis-ci.org/unfunco/phpunit-alternative-test-prefix)
+
 Listener for PHPUnit that allows for alternative test method prefixes to be specified within the PHPUnit configuration
 file, without also having to use the `@test` annotation.
 
