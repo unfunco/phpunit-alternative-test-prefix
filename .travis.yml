@@ -1,0 +1,25 @@
+language: php
+
+env:
+  matrix:
+    - PHPUNIT_VERSION="~3.0"
+    - PHPUNIT_VERSION="~4.0"
+    - PHPUNIT_VERSION="~5.0"
+
+php:
+  - 5.5
+  - 5.6
+  - 7.0
+
+before_script:
+  - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - composer self-update
+  - composer install
+  - COMPOSER_ROOT_VERSION=dev-master composer require --dev phpunit/phpunit $PHPUNIT_VERSION
+
+script:
+  - vendor/bin/phpunit
+
+after_script:
+  - composer remove --dev phpunit/phpunit
+  - rm -rf composer.lock vendor/
