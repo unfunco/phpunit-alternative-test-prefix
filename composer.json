@@ -1,7 +1,14 @@
 {
-    "name": "unfunco/phpunit-prefix",
-    "description": "Use custom test method prefixes without annotations.",
+    "name": "unfunco/phpunit-alternative-test-prefix",
+    "description": "Listener for PHPUnit that allows for alternative test method prefixes to be specified within the PHPUnit configuration file.",
     "version": "0.1.0",
+    "authors": [
+        {
+            "name": "Daniel Morris",
+            "email": "daniel@honestempire.com",
+            "role": "Programmer"
+        }
+    ],
     "require": {
         "php": ">=5.6"
     },
