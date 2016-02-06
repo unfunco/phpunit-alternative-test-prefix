@@ -2,6 +2,7 @@
     "name": "unfunco/phpunit-alternative-test-prefix",
     "description": "Listener for PHPUnit that allows for alternative test method prefixes to be specified within the PHPUnit configuration file.",
     "version": "0.1.0",
+    "license": "MIT",
     "authors": [
         {
             "name": "Daniel Morris",
