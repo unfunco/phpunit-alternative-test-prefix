@@ -30,6 +30,7 @@ use Exception;
 use PHPUnit_Framework_AssertionFailedError;
 use PHPUnit_Framework_Test;
 use PHPUnit_Framework_TestCase;
+use PHPUnit_Framework_TestListener;
 use PHPUnit_Framework_TestSuite;
 use PHPUnit_Framework_TestSuite_DataProvider;
 use PHPUnit_Util_Test;
@@ -42,7 +43,7 @@ use ReflectionMethod;
  * @package Unfunco\PHPUnit
  * @author  Daniel Morris <daniel@honestempire.com>
  */
-class AlternativeTestPrefixListener implements \PHPUnit_Framework_TestListener
+class AlternativeTestPrefixListener implements PHPUnit_Framework_TestListener
 {
     /**
      * The prefixes specified within the PHPUnit configuration file.
